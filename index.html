@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyTank — あなたのアクアリウムをスマートに管理</title>
+  <meta name="description" content="MyTankは水槽ごとの熱帯魚管理、並べ替え、写真・メモ機能を備えたiOS向けアプリです。アクアリウムには『MyTank』。" />
+  <style>
+    :root{
+      --accent:#0f7fa6;
+      --bg:#f7fbfc;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;background:var(--bg);color:#0b1220;line-height:1.6}
+    .wrap{max-width:1100px;margin:40px auto;padding:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#38b2ac);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    h1{font-size:1.6rem;margin:0}
+    .tag{color:var(--muted);font-size:0.95rem}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:28px}
+    .card{background:var(--card);padding:26px;border-radius:var(--radius);box-shadow:0 6px 24px rgba(16,24,40,0.06)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .primary{background:var(--accent);color:#fff}
+    .outline{background:transparent;color:var(--accent);border:2px solid rgba(15,127,166,0.12)}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .feature{padding:14px;border-radius:12px;background:linear-gradient(180deg,#ffffff,#fbfdff);border:1px solid rgba(12,24,36,0.04)}
+    .feature h3{margin:0 0 8px 0;font-size:1rem}
+    .feature p{margin:0;color:var(--muted);font-size:0.95rem}
+
+    .phone{width:100%;max-width:380px;margin:0 auto;display:block}
+    .screenshot{width:100%;height:650px;border-radius:18px;background:linear-gradient(180deg,#def3f8,#ffffff);display:flex;align-items:center;justify-content:center;color:#055;box-shadow:0 8px 30px rgba(2,6,23,0.06)}
+    .screenshot .mock{width:86%;height:90%;border-radius:14px;background:#fff;border:1px solid rgba(2,6,23,0.04);display:flex;flex-direction:column;padding:16px;overflow:auto}
+    .mock .row{display:flex;gap:10px;align-items:center;margin-bottom:10px}
+    .mock .tank{flex:1;background:linear-gradient(180deg,#eaf9ff,#ffffff);border-radius:10px;padding:10px}
+
+    .section{margin-top:36px}
+    .section h2{margin:0 0 12px 0;font-size:1.1rem}
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+
+    footer{margin-top:36px;padding:18px;text-align:center;color:var(--muted);font-size:0.92rem}
+
+    /* responsive */
+    @media (max-width:980px){.hero{grid-template-columns:1fr;}.features{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr}} 
+    @media (max-width:560px){.features{grid-template-columns:1fr}.brand h1{font-size:1.1rem}.screenshot{height:420px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">MT</div>
+        <div>
+          <h1>MyTank</h1>
+          <div class="tag">アクアリウムには「MyTank」 — iOS 向け水槽管理アプリ</div>
+        </div>
+      </div>
+
+      <nav>
+        <a class="btn outline" href="privacy.html">プライバシーポリシー</a>
+        <a class="btn" style="background:transparent;color:var(--muted);" href="https://forms.gle/97fKTZfzJGDoevih9" target="_blank">お問い合わせ</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div>
+        <div class="card">
+          <h2 style="margin-top:0">アクアリウムには「MyTank」</h2>
+          <p class="tag">水槽ごとに熱帯魚を管理。写真・メモで思い出を残し、ドラッグで並べ替え、不要な水槽は削除できます。</p>
+
+          <div class="features" aria-hidden="false">
+            <div class="feature">
+              <h3>水槽ごとに管理</h3>
+              <p>複数の水槽を個別に作成し、それぞれに熱帯魚データを保存できます。</p>
+            </div>
+            <div class="feature">
+              <h3>並べ替え・削除</h3>
+              <p>一覧は直感的に並べ替えが可能。不要な水槽はいつでも削除できます。</p>
+            </div>
+            <div class="feature">
+              <h3>写真とメモ</h3>
+              <p>各水槽に写真やメモを追加。成長記録や餌の記録に便利です。</p>
+            </div>
+          </div>
+
+          <div class="cta">
+            <button class="btn primary">App Storeで見る</button>
+            <a class="btn outline" href="privacy.html">プライバシーポリシー</a>
+            <a class="btn" href="https://forms.gle/97fKTZfzJGDoevih9" target="_blank" style="background:transparent;color:var(--accent);">お問い合わせ</a>
+          </div>
+        </div>
+
+        <section class="section">
+          <h2>主な機能</h2>
+          <div class="cards">
+            <div class="card">
+              <h3>① 水槽ごとに熱帯魚を管理</h3>
+              <p>魚種、数、設置日などを水槽単位で管理。個別のメモや写真も保存できます。</p>
+            </div>
+            <div class="card">
+              <h3>② 並べ替え・削除</h3>
+              <p>一覧画面でドラッグ操作により自由に並べ替え。不要な水槽は削除して整理できます。</p>
+            </div>
+            <div class="card">
+              <h3>③ 写真追加・メモ機能</h3>
+              <p>水槽の写真を複数枚追加可能。観賞記録や給餌メモを残せます。</p>
+            </div>
+            <div class="card">
+              <h3>軽快でシンプル</h3>
+              <p>シンプル設計で操作が分かりやすく、初めての方でもすぐに使えます。</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="phone card">
+        <div class="screenshot" role="img" aria-label="MyTank app screenshot mockup">
+          <div class="mock">
+            <div class="row"><strong>MyTank</strong><div style="flex:1"></div><span class="tag">3 tanks</span></div>
+            <div class="row"><div class="tank">● 60cm Aquarium<br><small class="tag">ネオンテトラ x15</small></div></div>
+            <div class="row"><div class="tank">● 45cm Aquarium<br><small class="tag">グッピー x10</small></div></div>
+            <div class="row"><div class="tank">● Nano Tank<br><small class="tag">ベタ x1</small></div></div>
+            <div style="flex:1"></div>
+            <div style="font-size:0.88rem;color:var(--muted);text-align:center">（ここに実機スクリーンショットを差し替えてください）</div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <section class="section">
+      <h2>ダウンロード</h2>
+      <p>App Store で公開予定（準備中）。公開後はこちらのボタンからアクセスできます。</p>
+      <div style="margin-top:12px">
+        <button class="btn primary">App Storeで見る</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>よくある質問</h2>
+      <div class="card">
+        <h3>データは端末内に保存されますか？</h3>
+        <p>はい。本アプリはユーザー情報を取得しない設計です。詳細はプライバシーポリシーをご覧ください。</p>
+
+        <h3 style="margin-top:12px">問い合わせはどこに送ればいいですか？</h3>
+        <p>ページ上部または下の「お問い合わせ」ボタンからフォームへアクセスしてください。</p>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 照内 裕太 / MyTank &nbsp;・&nbsp;<a href="privacy.html">プライバシーポリシー</a> &nbsp;・&nbsp; <a href="https://forms.gle/97fKTZfzJGDoevih9" target="_blank">お問い合わせフォーム</a>
+    </footer>
+  </div>
+</body>
+</html>
